@@ -1,3 +1,155 @@
 //====================================================================================================
+.footer {
+	font-size: rem(14);
+	font-weight: 700;
+	color: $white;
+	background-color: $dark;
+	padding-top: rem(56);
+	position: relative;
+
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		gap: rem(48);
+
+		@media (max-width: 1024.4) {
+			justify-content: space-between;
+		}
+	}
+
+	&__item {
+		max-width: rem(209);
+	}
+
+	&__subtitle {
+		text-transform: uppercase;
+		line-height: rem(20);
+		margin-bottom: rem(20);
+		color: $orange;
+		display: flex;
+		align-items: center;
+	}
+
+	&__hex-icon {
+		margin-right: rem(8);
+	}
+
+
+	&__list {
+
+		li {
+			margin-bottom: rem(8);
+		}
+
+		a {
+			text-transform: uppercase;
+			line-height: rem(20);
+			white-space: nowrap;
+			font-weight: normal;
+
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+	}
+
+	&__rights {
+		font-size: rem(10);
+		text-align: center;
+		font-weight: normal;
+		color: $white;
+		margin-top: rem(35);
+		background-color: $blacky;
+		padding: rem(2);
+
+		@media (max-width: $mobile) {
+			font-size: rem(8);
+			margin-top: rem(260);
+			padding: rem(38);
+		}
+	}
+
+	&__logo {
+		position: absolute;
+		right: rem(32);
+		bottom: rem(32);
+
+		@media (max-width: $mobile) {
+			right: 50%;
+			transform: translate(50%, 0%);
+			bottom: rem(180);
+
+		}
+	}
+}
+
+.twitter {
+	width: rem(340);
+	flex-shrink: 0;
+	margin-bottom: rem(10);
+
+	&__header {
+		color: #ffffff;
+		display: flex;
+		align-items: center;
+		background-color: $violet;
+		margin-right: rem(40);
+		margin-bottom: 0;
+
+		h3 {
+			margin-top: 5px;
+			margin-bottom: rem(2);
+			font-weight: 700;
+		}
+
+		span {
+			font-weight: 300;
+		}
+
+
+	}
+
+	&__icon {
+		background-color: $dark-violet;
+		margin-right: 16px;
+		padding: 10px;
+	}
+
+	&__body {
+		font-family: "Myriad Pro", "Roboto", sans-serif;
+		font-weight: 300;
+		font-size: 12px;
+		color: #999999;
+		margin-top: 0px;
+		margin-right: 40px;
+		padding: rem(20);
+		padding-left: rem(31);
+		padding-right: rem(46);
+		background-color: #ffffff;
+
+		p {
+			line-height: 1.8;
+			margin-bottom: 5px;
+		}
+
+		a {
+			margin-top: 0px;
+			color: $violet;
+		}
+
+		b {
+			display: block;
+			font-size: rem(10);
+			margin-bottom: 15px;
+			color: #000;
+			font-weight: 100;
+			opacity: 0.8;
+		}
+	}
+}
+
 
 //====================================================================================================

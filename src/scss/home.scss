@@ -15,7 +15,9 @@
 		padding-bottom: rem(45);
 	}
 
-	&__product {}
+	&__get-started {
+		margin-bottom: rem(97);
+	}
 }
 
 .promo {
@@ -51,6 +53,11 @@
 		max-height: rem(257);
 		margin-bottom: rem(60);
 		margin-left: rem(90);
+
+		@media (max-width:$mobile) {
+			margin-left: rem(0);
+
+		}
 	}
 
 	&__title {
@@ -135,6 +142,10 @@
 
 	@media (max-width:1260px) {
 		right: 5%;
+	}
+
+	@media (max-width: 1024.5px) {
+		top: 40%;
 	}
 
 	@media (max-width:$mobile) {
