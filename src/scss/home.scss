@@ -364,4 +364,109 @@
 
 }
 
+.get-started {
+	color: $white;
+
+	&__alt-container {
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		max-width: rem(1742);
+		margin: 0 auto;
+		background-image: url('@img/Contact-Us.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		gap: rem(30);
+		padding: 0 rem(28);
+		@include adaptiveValue("padding-top", 130, 40);
+		@include adaptiveValue("padding-bottom", 120, 40);
+
+	}
+
+	&__text-wrapper {
+		max-width: rem(400);
+		margin-left: rem(60);
+	}
+
+	&__title {
+		@include adaptiveValue('font-size', 55, 32);
+		font-weight: bold;
+	}
+}
+
+.form {
+	width: rem(640);
+	margin-right: rem(30);
+
+	&__title {
+		margin-bottom: rem(30);
+		@include adaptiveValue('font-size', 28, 20);
+	}
+
+	&__names-wrapper {
+		display: flex;
+		column-gap: rem(20);
+		justify-content: space-between;
+
+		@media (max-width: $mobile) {
+			flex-direction: column;
+		}
+	}
+
+	&__label {
+		font-size: rem(13);
+		margin-bottom: rem(13);
+	}
+
+	&__input {
+		width: 100%;
+		padding: rem(13) rem(13);
+		border-radius: rem(8);
+		min-width: rem(308);
+
+		@media (max-width: $mobile) {
+			flex-direction: column;
+			min-width: auto;
+		}
+	}
+
+	&__first-name {
+		display: flex;
+		flex-direction: column;
+		@include adaptiveValue('margin-bottom', 28, 20)
+	}
+
+	&__last-name {
+		display: flex;
+		flex-direction: column;
+		@include adaptiveValue('margin-bottom', 28, 20)
+	}
+
+	&__email {
+		display: flex;
+		flex-direction: column;
+		@include adaptiveValue('margin-bottom', 28, 20)
+	}
+
+	&__text-area {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: rem(14) rem(13);
+		border-radius: rem(8);
+		resize: none;
+		@include adaptiveValue('margin-bottom', 10, 40)
+	}
+
+	&__btn {
+		padding-left: rem(82);
+		padding-right: rem(82);
+
+		@media (max-width: $mobile) {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+}
+
 //====================================================================================================
