@@ -1,9 +1,7 @@
 //====================================================================================================
 .page {
 
-	&__promo {
-		margin-top: rem(-2);
-	}
+	&__promo {}
 
 	&__statistic {
 		@include adaptiveValue("padding-top", 133, 75);
@@ -220,6 +218,10 @@
 		padding: rem(19) rem(56);
 		margin-right: rem(80);
 
+		@media (max-width:$mobile) {
+			font-size: rem(32);
+		}
+
 		&::after {
 			position: absolute;
 			content: "";
@@ -310,6 +312,10 @@
 		line-height: rem(55);
 		margin-top: rem(95);
 		margin-bottom: rem(5);
+
+		@media (max-width:$mobile) {
+			font-size: rem(30);
+		}
 	}
 
 	&__text {
@@ -402,6 +408,10 @@
 	&__title {
 		@include adaptiveValue('font-size', 55, 32);
 		font-weight: bold;
+
+		@media (max-width:$mobile) {
+			font-size: rem(32);
+		}
 	}
 }
 
@@ -412,6 +422,11 @@
 	&__title {
 		margin-bottom: rem(30);
 		@include adaptiveValue('font-size', 28, 20);
+		white-space: nowrap;
+
+		@media (max-width: $mobile) {
+			font-size: rem(20);
+		}
 	}
 
 	&__names-wrapper {
@@ -427,6 +442,7 @@
 	&__label {
 		font-size: rem(13);
 		margin-bottom: rem(13);
+
 	}
 
 	&__input {
@@ -444,19 +460,22 @@
 	&__first-name {
 		display: flex;
 		flex-direction: column;
-		@include adaptiveValue('margin-bottom', 28, 20)
+		@include adaptiveValue('margin-bottom', 28, 20);
+		position: relative;
 	}
 
 	&__last-name {
 		display: flex;
 		flex-direction: column;
-		@include adaptiveValue('margin-bottom', 28, 20)
+		@include adaptiveValue('margin-bottom', 28, 20);
+		position: relative;
 	}
 
 	&__email {
 		display: flex;
 		flex-direction: column;
-		@include adaptiveValue('margin-bottom', 28, 20)
+		@include adaptiveValue('margin-bottom', 28, 20);
+		position: relative;
 	}
 
 	&__text-area {
