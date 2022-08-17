@@ -55,8 +55,18 @@ $mobileSmall: em(479.98); // Телефоны S
 // Обнуление и общие параметры ============================================================================================================================================================================================== =============================================================================================== ===============================================================================================
 @import "base/null";
 
+@font-face {
+	font-family: "ProximaNovaRegular";
+	src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot");
+	src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot?#iefix")format("embedded-opentype"),
+		url("../fonts/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff"),
+		url("../fonts/ProximaNovaRegular/ProximaNovaRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 400;
+}
+
 body {
-	font-family: 'Proxima Nova Rg', 'Roboto', sans-serif;
+	font-family: 'Proxima Nova', sans-serif;
 
 	// Скролл заблокирован
 	.lock & {

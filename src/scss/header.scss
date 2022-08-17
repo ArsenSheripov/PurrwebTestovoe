@@ -4,9 +4,8 @@
 	background-color: transparent;
 	font-size: rem(15);
 	padding: rem(15) rem(0);
-	padding-top: rem(32);
-	margin-bottom: rem(114);
-	@include adaptiveValue("margin-bottom", 114, 40);
+	padding-top: rem(40);
+	@include adaptiveValue("margin-bottom", 110, 40);
 
 }
 
@@ -22,7 +21,8 @@
 	&__item {
 		text-transform: uppercase;
 		font-weight: bold;
-		margin-right: rem(28);
+		margin-right: rem(22);
+		letter-spacing: 0;
 
 
 		&:last-child {
