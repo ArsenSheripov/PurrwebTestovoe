@@ -12,8 +12,10 @@
 
 	&__about-us {
 		@include adaptiveValue("padding-top", 100, 45);
-		@include adaptiveValue("padding-bottom", 140, 45);
+		padding-bottom: rem(45);
 	}
+
+	&__product {}
 }
 
 .promo {
@@ -263,6 +265,101 @@
 		text-transform: uppercase;
 		color: $violet;
 		margin-bottom: rem(8);
+	}
+
+}
+
+.product {
+
+
+	&__alt-container {
+		display: flex;
+		justify-content: space-between;
+		max-width: rem(1320);
+		margin: 0 auto;
+		gap: rem(30);
+		padding: rem(90) rem(0);
+
+		@media (max-width: rem(1252.2)) {
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+
+	}
+
+	&__text-wrapper {
+		max-width: rem(455);
+		position: relative;
+		padding-left: rem(7);
+	}
+
+	&__title {
+		@include adaptiveValue('font-size', 38, 30);
+		font-weight: bold;
+		line-height: rem(55);
+		margin-top: rem(95);
+		margin-bottom: rem(5);
+	}
+
+	&__text {
+
+		line-height: rem(21);
+		letter-spacing: -2%;
+
+		@media (min-width: rem(1252.2)) {
+			margin-bottom: rem(38);
+		}
+
+	}
+
+	&__btn {
+		white-space: nowrap;
+		padding: rem(14) rem(45);
+
+		@media (max-width: rem(1252.2)) {
+			position: absolute;
+			@include adaptiveValue('top', 730, 550);
+			left: 50%;
+			transform: translate(-50%, 0%);
+			z-index: 30;
+		}
+	}
+
+	&__video-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: $white;
+		background: url('@img/msiginbg.png');
+		background-size: cover;
+
+		@include adaptiveValue('padding-top', 170, 70);
+		@include adaptiveValue('padding-bottom', 110, 30);
+		@include adaptiveValue('padding-left', 135, 70);
+		@include adaptiveValue('padding-right', 155, 70);
+
+		img {
+			display: block;
+			@include adaptiveValue('margin-bottom', 20, 15);
+		}
+
+		span {
+			@include adaptiveValue('font-size', 15, 10);
+			@include adaptiveValue('line-height', 20, 14);
+			font-weight: 700;
+			text-transform: uppercase;
+			@include adaptiveValue('margin-bottom', 15, 2);
+
+		}
+
+		h3 {
+			@include adaptiveValue('font-size', 28, 13);
+			@include adaptiveValue('line-height', 38, 22);
+			white-space: nowrap;
+			font-weight: 900;
+			text-transform: uppercase;
+		}
 	}
 
 }
