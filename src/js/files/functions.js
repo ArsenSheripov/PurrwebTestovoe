@@ -410,11 +410,13 @@ export function tabs() {
 // Модуль работы с меню (бургер) =======================================================================================================================================================================================================================
 export function menuInit() {
 	let iconMenu = document.querySelector(".icon-menu");
+	let menuBurger = document.querySelector('.menu__body');
 	if (iconMenu) {
 		iconMenu.addEventListener("click", function (e) {
 			if (bodyLockStatus) {
 				bodyLockToggle();
 				document.documentElement.classList.toggle("menu-open");
+				menuBurger.classList.toggle("menu-open");
 			}
 		});
 	};

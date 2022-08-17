@@ -1,1 +1,25 @@
-// Заголовки, общие БЄМ блоки и проче...
+// Заголовки, общие БЭМ блоки и проче...
+
+.title {
+	font-weight: bold;
+	color: $violet;
+}
+
+.text {
+	font-size: rem(15);
+	font-weight: normal;
+	line-height: rem(19);
+	letter-spacing: -0.8%;
+	color: $gray;
+}
+
+.btn {
+	font-size: rem(14);
+	font-weight: bold;
+	color: $white;
+	text-transform: uppercase;
+	padding: rem(19.5) rem(41.5);
+	background-color: $orange;
+	cursor: pointer;
+	border-radius: rem(4);
+}

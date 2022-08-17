@@ -56,6 +56,7 @@ $mobileSmall: em(479.98); // Телефоны S
 @import "base/null";
 
 body {
+	font-family: 'Proxima Nova Rg', 'Roboto', sans-serif;
 
 	// Скролл заблокирован
 	.lock & {

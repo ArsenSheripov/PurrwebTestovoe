@@ -1,16 +1,93 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('html/_head.htm',{
-	"title":"Главная"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_popup.htm',{})
-		@@include('html/_js.htm',{})
-	</body>
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		<main class="page">
+			<section class="page__promo promo">
+
+				@@include('html/_header.htm',{})
+
+				<div class="promo__container">
+					<div class="promo__flex-wrapper">
+						<div class="promo__text-wrapper">
+							<div class="promo__swiper swiper">
+
+								<div class="swiper-wrapper">
+
+									<div class="swiper-slide">
+										<h1 class="promo__title">Device Authentication</h1>
+										<p class="promo__text">SALT Group is a world leader in authentication and
+											security. We have
+											a range of services to improve user authentication.
+										</p>
+										<p class="promo__text">
+											Discover the possibilities with SALT.</p>
+										<button class="promo__btn btn">Get Started</button>
+									</div>
+									<div class="swiper-slide">
+										<h1 class="promo__title">HSM Solutions</h1>
+										<p class="promo__text">SALT Group is a world leader in authentication and
+											security. We have
+											a range of services to improve user authentication.
+										</p>
+										<p class="promo__text">
+											Discover the possibilities with SALT.</p>
+										<button class="promo__btn btn">Get Started</button>
+									</div>
+									<div class="swiper-slide">
+										<h1 class="promo__title">Lorem ipsum</h1>
+										<p class="promo__text">SALT Group is a world leader in authentication and
+											security. We have
+											a range of services to improve user authentication.
+										</p>
+										<p class="promo__text">
+											Discover the possibilities with SALT.</p>
+										<button class="promo__btn btn">Get Started</button>
+									</div>
+
+								</div>
+
+
+
+							</div>
+
+						</div>
+						<div class="promo__img-wrapper">
+							<img class="promo__img" src="@img/Twitter.svg" alt="Twitter" width="151" height="154">
+						</div>
+					</div>
+					<div class="swiper-pagination">
+						<span class="swiper-pagination-bullet">
+							<svg width="20" height="20">
+								<use xlink:href="#hex"></use>
+							</svg>
+						</span>
+						<span class="swiper-pagination-bullet">
+							<svg width="20" height="20">
+								<use xlink:href="#hex"></use>
+							</svg>
+						</span>
+						<span class="swiper-pagination-bullet">
+							<svg width="20" height="20">
+								<use xlink:href="#hex"></use>
+							</svg>
+						</span>
+					</div>
+					<a href="#footer" class="promo__find">
+						<p>Find out more</p>
+						<img src="@img/Union.svg" />
+					</a>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
 </html>
