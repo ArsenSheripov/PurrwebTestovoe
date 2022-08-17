@@ -1,5 +1,15 @@
 //====================================================================================================
+.page {
 
+	&__promo {
+		margin-top: rem(-2);
+	}
+
+	&__statistic {
+		@include adaptiveValue("padding-top", 133, 75);
+		@include adaptiveValue("padding-bottom", 151, 95);
+	}
+}
 
 .promo {
 	background-image: url("@img/Bg.png");
@@ -137,5 +147,45 @@
 	background-image: url('@img/hexorange.svg');
 
 }
+
+
+.statistic {
+
+	&__container {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		align-items: center;
+		column-gap: 20;
+	}
+
+	&__item {
+		text-align: center;
+		max-width: rem(255);
+
+		@media (max-width: $mobile) {
+			margin-bottom: rem(68);
+		}
+	}
+
+	&__coast {
+		display: block;
+		font-size: rem(60);
+		font-weight: bold;
+		line-height: rem(68);
+		color: $violet;
+		margin-bottom: rem(14);
+	}
+
+	&__text {
+		font-size: rem(16);
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: rem(18);
+		letter-spacing: -2%;
+		color: $violet;
+	}
+}
+
 
 //====================================================================================================
